@@ -16,57 +16,155 @@ html{
 }
 
 @media screen and (max-width: 768px) {
+  /* Quy tắc CSS cho điện thoại di động */
   #slider {
-    height: 30vh; /* Adjust height for small screens */
-    padding: 50px 0; /* Reduce padding */
+    height: 30vh; /* Điều chỉnh chiều cao */
+    padding: 50px 0; /* Giảm khoảng cách padding */
   }
 
   #slider .text-content {
-    font-size: 16px; /* Adjust text size */
+    font-size: 16px; /* Điều chỉnh kích thước chữ */
   }
 
   .map-section img {
-    height: auto; /* Maintain aspect ratio for images */
+    height: auto; /* Giữ tỷ lệ ảnh */
   }
 
   .members-list, .places-list {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; /* Xếp dọc */
   }
 
   .col-half, .col-third {
-    flex: 1 1 100%; /* Full width on small screens */
+    flex: 1 1 100%; /* Chiếm toàn bộ chiều rộng */
   }
 
   .contact-info, .contact-form {
-    text-align: center; /* Center-align text */
+    text-align: center; /* Căn giữa văn bản */
   }
 
-  #content .content-section {
-    padding: 10px; /* Giảm padding cho màn hình nhỏ */
-  }
-
-  .tour-section {
-    padding: 10px; /* Giảm padding cho màn hình nhỏ */
+  #content .content-section, .tour-section {
+    padding: 10px; /* Giảm padding */
   }
 
   .tickets-list, .places-list {
-    padding: 0; /* Loại bỏ padding không cần thiết */
+    padding: 0; /* Loại bỏ padding */
   }
 
   .places-list {
     display: flex;
-    flex-direction: column; /* Stack các phần tử theo chiều dọc trên màn hình nhỏ */
+    flex-direction: column; /* Xếp dọc các phần tử */
   }
 
   .col-third {
-    width: 100%; /* Chiếm toàn bộ chiều rộng trên màn hình nhỏ */
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
     margin-bottom: 20px; /* Khoảng cách giữa các phần tử */
   }
 
   .place-img {
-    height: auto; /* Đảm bảo ảnh duy trì tỷ lệ khung hình trên màn hình nhỏ */
+    height: auto; /* Giữ tỷ lệ ảnh */
   }
 }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Quy tắc CSS cho máy tính bảng */
+  #slider {
+    height: 40vh; /* Điều chỉnh chiều cao */
+    padding: 70px 0; /* Điều chỉnh padding */
+  }
+
+  #slider .text-content {
+    font-size: 18px; /* Điều chỉnh kích thước chữ */
+  }
+
+  .map-section img {
+    height: auto; /* Giữ tỷ lệ ảnh */
+  }
+
+  .members-list, .places-list {
+    flex-direction: row; /* Xếp ngang */
+  }
+
+  .col-half, .col-third {
+    flex: 1 1 50%; /* Chiếm một nửa chiều rộng */
+  }
+
+  .contact-info, .contact-form {
+    text-align: left; /* Căn trái văn bản */
+  }
+
+  #content .content-section, .tour-section {
+    padding: 20px; /* Điều chỉnh padding */
+  }
+
+  .tickets-list, .places-list {
+    padding: 10px; /* Thêm padding */
+  }
+
+  .places-list {
+    display: flex;
+    flex-direction: row; /* Xếp ngang các phần tử */
+  }
+
+  .col-third {
+    width: 33.33%; /* Một phần ba chiều rộng */
+    margin-bottom: 20px; /* Khoảng cách giữa các phần tử */
+  }
+
+  .place-img {
+    height: auto; /* Giữ tỷ lệ ảnh */
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* Quy tắc CSS cho laptop */
+  #slider {
+    height: 50vh; /* Điều chỉnh chiều cao */
+    padding: 100px 0; /* Điều chỉnh padding */
+  }
+
+  #slider .text-content {
+    font-size: 20px; /* Điều chỉnh kích thước chữ */
+  }
+
+  .map-section img {
+    height: auto; /* Giữ tỷ lệ ảnh */
+  }
+
+  .members-list, .places-list {
+    flex-direction: row; /* Xếp ngang */
+  }
+
+  .col-half, .col-third {
+    flex: 1 1 33.33%; /* Một phần ba chiều rộng */
+  }
+
+  .contact-info, .contact-form {
+    text-align: left; /* Căn trái văn bản */
+  }
+
+  #content .content-section, .tour-section {
+    padding: 30px; /* Điều chỉnh padding */
+  }
+
+  .tickets-list, .places-list {
+    padding: 20px; /* Thêm padding */
+  }
+
+  .places-list {
+    display: flex;
+    flex-direction: row; /* Xếp ngang các phần tử */
+  }
+
+  .col-third {
+    width: 33.33%; /* Một phần ba chiều rộng */
+    margin-bottom: 30px; /* Khoảng cách giữa các phần tử */
+  }
+
+  .place-img {
+    height: auto; /* Giữ tỷ lệ ảnh */
+  }
+}
+
 
 .clear {
   clear: both;
