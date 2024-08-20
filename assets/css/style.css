@@ -5,26 +5,10 @@
   box-sizing: border-box;
 }
 
-/* thêm font vào html nó sẽ thừa hưởng cho tất cả chứa html */
 html{
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
-
-/* 
-1. Từ vào ngoài trong 
-2. Từ trên xuống dưới
-3. Tổng quan đến chi tiết
-*/
-
-/* 
-1. Position ở đâu ? 
-2. Kichs thước
-3. Màu sắc
-4. Kiểu dáng ( kiểu chữ, hình tròn, hình vuông... )
-*/
-
-
 
 .clear {
   clear: both;
@@ -96,10 +80,6 @@ html{
   width: calc(100%/3);
 }
 
-#main {
-
-}
-
 #header {
   height: 46px;
   background-color: #000;
@@ -113,11 +93,6 @@ html{
 #nav {
   display: inline-block;
 }
-
-/* #nav > li {
-  display: inline-block;
-} */
-
 
 #nav li {
   display: inline-block;
@@ -150,7 +125,6 @@ html{
 #nav .subnav li:hover a {
   background-color: #ccc;
   color: #000;
-  /* đặt inline sẽ k có kích thước có định và nó sau ăn theo line-height: 46px */
 }
 
 #nav .subnav {
@@ -172,7 +146,6 @@ html{
 
 #nav .nav-caret-down {
   font-size: 14px ;
-  /* mac din font-icon 16px */
 }
 
 #header .search-btn {
@@ -197,11 +170,7 @@ html{
   margin-top: 46px;
   padding-top: 50%;
   /* 50% chiều ngang của chính nó */
-  background: url('../img/slider1.jpg') top center / cover no-repeat;
-  /* background-image: url('/assets/img/slider1.jpg');
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat; */
+  background: url('../img/BLKPNK-0043_EvergreenStoreRefreshHero-Banner.webp') top center / cover no-repeat;
 } 
 
 #slider .text-content {
@@ -217,17 +186,13 @@ html{
 }
 
 #slider .text-heading {
-  font-weight: 500;
+  font-weight: 1000;
   font-size: 24px;
 }
 
 #slider .text-description {
   font-size: 15px;
   margin-top: 25px;
-}
-
-#content {
-
 }
 
 #content .content-section {
@@ -261,16 +226,20 @@ html{
 
 #content .member-item {
   text-align: center;
+  
 }
 
 #content .member-name {
-  font-size: 15px;
+  font-size: 25px;
+  color: rgb(228, 85, 109);
+  font-weight: 900;
 }
 
 #content .member-img {
   margin-top: 15px;
-  width: 154px;
+  width: 158px;
   border-radius: 4px;
+  height: 204px;
 }
 
 #content .members-list{
