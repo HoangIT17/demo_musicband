@@ -1,7 +1,5 @@
 /* General Styles */
 html, body {
-  margin: 0;
-  padding: 0;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
@@ -15,18 +13,6 @@ html, body {
 html{
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 1200px) {
-  #slider {
-    height: 40vh; /* Adjust height for medium screens */
-    padding: 80px 0; /* Reduce padding */
-  }
-
-  #slider .text-content {
-    font-size: 18px; /* Adjust text size */
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -54,20 +40,31 @@ html{
   .contact-info, .contact-form {
     text-align: center; /* Center-align text */
   }
-}
 
-@media screen and (max-width: 480px) {
-  #slider {
-    height: 25vh; /* Adjust height for very small screens */
-    padding: 30px 0; /* Reduce padding further */
+  #content .content-section {
+    padding: 10px; /* Giảm padding cho màn hình nhỏ */
   }
 
-  #slider .text-content {
-    font-size: 14px; /* Adjust text size */
+  .tour-section {
+    padding: 10px; /* Giảm padding cho màn hình nhỏ */
   }
 
-  .contact-info, .contact-form {
-    padding: 10px; /* Reduce padding */
+  .tickets-list, .places-list {
+    padding: 0; /* Loại bỏ padding không cần thiết */
+  }
+
+  .places-list {
+    display: flex;
+    flex-direction: column; /* Stack các phần tử theo chiều dọc trên màn hình nhỏ */
+  }
+
+  .col-third {
+    width: 100%; /* Chiếm toàn bộ chiều rộng trên màn hình nhỏ */
+    margin-bottom: 20px; /* Khoảng cách giữa các phần tử */
+  }
+
+  .place-img {
+    height: auto; /* Đảm bảo ảnh duy trì tỷ lệ khung hình trên màn hình nhỏ */
   }
 }
 
@@ -276,9 +273,19 @@ html{
   margin-top: 25px;
 }
 
+/* #content .content-section {
+  width: 90%; 
+  max-width: 1200px; 
+  padding: 20px; 
+  margin-left: auto;
+  margin-right: auto;
+} */
+
 #content .content-section {
-  width: 800px;
-  padding: 64px 0 112px;
+  width: 90%;
+  max-width: 1200px; 
+  /* padding: 64px 0 112px; */
+  padding: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -326,9 +333,15 @@ html{
 #content .members-list{
   margin-top: 32px;
 }
+
 /* Tour section */
 .tour-section {
   background-color: #000;
+  padding: 20px; 
+  width: 90%; /* Đặt width là 90% để phần này không bị quá rộng trên màn hình nhỏ */
+  max-width: 1200px; /* Đặt một giá trị tối đa để không quá rộng trên màn hình lớn */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tickets-list {
@@ -574,3 +587,4 @@ html{
 #footer .copyright a {
   color: rgba(0, 0, 0, 0.6);
 }
+
