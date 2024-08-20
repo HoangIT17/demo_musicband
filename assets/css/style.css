@@ -65,107 +65,6 @@ html{
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  /* Quy tắc CSS cho máy tính bảng */
-  #slider {
-    height: 40vh; /* Điều chỉnh chiều cao */
-    padding: 70px 0; /* Điều chỉnh padding */
-  }
-
-  #slider .text-content {
-    font-size: 18px; /* Điều chỉnh kích thước chữ */
-  }
-
-  .map-section img {
-    height: auto; /* Giữ tỷ lệ ảnh */
-  }
-
-  .members-list, .places-list {
-    flex-direction: row; /* Xếp ngang */
-  }
-
-  .col-half, .col-third {
-    flex: 1 1 50%; /* Chiếm một nửa chiều rộng */
-  }
-
-  .contact-info, .contact-form {
-    text-align: left; /* Căn trái văn bản */
-  }
-
-  #content .content-section, .tour-section {
-    padding: 20px; /* Điều chỉnh padding */
-  }
-
-  .tickets-list, .places-list {
-    padding: 10px; /* Thêm padding */
-  }
-
-  .places-list {
-    display: flex;
-    flex-direction: row; /* Xếp ngang các phần tử */
-  }
-
-  .col-third {
-    width: 33.33%; /* Một phần ba chiều rộng */
-    margin-bottom: 20px; /* Khoảng cách giữa các phần tử */
-  }
-
-  .place-img {
-    height: auto; /* Giữ tỷ lệ ảnh */
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-  /* Quy tắc CSS cho laptop */
-  #slider {
-    height: 50vh; /* Điều chỉnh chiều cao */
-    padding: 100px 0; /* Điều chỉnh padding */
-  }
-
-  #slider .text-content {
-    font-size: 20px; /* Điều chỉnh kích thước chữ */
-  }
-
-  .map-section img {
-    height: auto; /* Giữ tỷ lệ ảnh */
-  }
-
-  .members-list, .places-list {
-    flex-direction: row; /* Xếp ngang */
-  }
-
-  .col-half, .col-third {
-    flex: 1 1 33.33%; /* Một phần ba chiều rộng */
-  }
-
-  .contact-info, .contact-form {
-    text-align: left; /* Căn trái văn bản */
-  }
-
-  #content .content-section, .tour-section {
-    padding: 30px; /* Điều chỉnh padding */
-  }
-
-  .tickets-list, .places-list {
-    padding: 20px; /* Thêm padding */
-  }
-
-  .places-list {
-    display: flex;
-    flex-direction: row; /* Xếp ngang các phần tử */
-  }
-
-  .col-third {
-    width: 33.33%; /* Một phần ba chiều rộng */
-    margin-bottom: 30px; /* Khoảng cách giữa các phần tử */
-  }
-
-  .place-img {
-    height: auto; /* Giữ tỷ lệ ảnh */
-  }
-}
-
-
 .clear {
   clear: both;
 }
@@ -320,26 +219,6 @@ html{
   line-height: 46px;
 }
 
-
-/* #slider {
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  text-align: center;
-  padding: 100px 0;
-  width: 100%;
-  height: 50vh; 
-  min-height: 300px; 
-  position: relative; 
-} */
-
-/* #slider .text-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
-
 #slider {
   position: relative;
   margin-top: 46px;
@@ -371,19 +250,10 @@ html{
   margin-top: 25px;
 }
 
-/* #content .content-section {
-  width: 90%; 
-  max-width: 1200px; 
-  padding: 20px; 
-  margin-left: auto;
-  margin-right: auto;
-} */
-
 #content .content-section {
   width: 90%;
   max-width: 1200px; 
-  /* padding: 64px 0 112px; */
-  padding: 20px;
+  padding: 64px 0 112px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -412,7 +282,6 @@ html{
 
 #content .member-item {
   text-align: center;
-  
 }
 
 #content .member-name {
@@ -436,8 +305,8 @@ html{
 .tour-section {
   background-color: #000;
   padding: 20px; 
-  width: 90%; /* Đặt width là 90% để phần này không bị quá rộng trên màn hình nhỏ */
-  max-width: 1200px; /* Đặt một giá trị tối đa để không quá rộng trên màn hình lớn */
+  width: 90%; 
+  max-width: 1200px; 
   margin-left: auto;
   margin-right: auto;
 }
@@ -474,9 +343,7 @@ html{
   margin-top: -3px;
 }
 
-
 /* Place */
-
 .places-list{
   margin-top: 32px;
 }
@@ -635,7 +502,6 @@ html{
 
 .contact-form {
   font-size: 15px;
-
 }
 
 .contact-form .form-control {
@@ -646,18 +512,18 @@ html{
 
 /* Map section */
 
-.map-section img {
-  width: 100%;
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* Map Section */
 .map-section {
   width: 100%;
   overflow: hidden; /* Prevent content overflow */
 }
 
+.map-section img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
 /* Footer section */
+
 #footer {
   padding: 64px 16px;
   text-align: center;
